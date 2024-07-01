@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Libre_Bodoni';
+  src: url('../Assets/LibreBodoni-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: 'Lexend_Exa';
+  src: url('../Assets/LexendExa-VariableFont_wght.ttf');
+}
+
+.relatedproducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 90vh;
+}
+.relatedproducts h1 {
+  color: #202E24;
+  font-family: 'Libre_Bodoni';
+  font-size: 50px;
+  font-weight: 600;
+}
+.relatedproducts hr {
+  width: 200px;
+  height: 6px;
+  background: #202E24;
+  border: none;
+}
+.relatedproducts-item {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+}

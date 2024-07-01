@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'Libre_Bodoni';
+  src: url('../Assets/LibreBodoni-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: 'Lexend_Exa';
+  src: url('../Assets/LexendExa-VariableFont_wght.ttf');
+}
+.hero {
+  height: 100vh;
+  /* background: linear-gradient(180deg, #202E24, #e1ffea22 80%); */
+  display: flex;
+  background-color: #202E24;
+  background-image: url('../Assets/blacksea.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-left img {
+  max-width: 100%;
+}
+.hero-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-right: 180px;
+  line-height: 1.1;
+}
+.hero-right h2 {
+  color: #EBE8BE;
+  font-family: 'Libre_Bodoni';
+  font-size: 96px;
+  font-weight: 600;
+}
+.hero-right p {
+  color: #B3C87A;
+  font-size: 24px;
+  font-weight: 300;
+}
+.hero-buynow-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 190px;
+  height: 38px;
+  /* width: 310px;
+  height: 70px; */
+  margin-top: 30px;
+  background: #EBE8BE;
+  color: #202E24;
+  font-family: 'Lexend_Exa';
+  font-size: 22px;
+  font-weight: 600;
+}
+@media(max-width:1280px) {
+  .hero-left img {
+    width: 500px;
+  }
+  .hero-right {
+    padding-right: 100px;
+  }
+  .hero-right h2 {
+    font-size: 60px;
+  }
+  .hero-right p {
+    font-size: 22px;
+  }
+  .hero-buynow-btn {  
+    gap: 10px;
+    width: 155px;  
+    height: 35px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+}
+@media(max-width:1024px) {
+  .hero-left img {
+    width: 400px;
+  }
+  .hero-right {
+    padding-right: 80px;
+  }
+  .hero-right h2 {
+    font-size: 50px;
+  }
+  .hero-right p {
+    font-size: 20px;
+  }
+  .hero-buynow-btn {  
+    width: 150px;  
+    height: 30px;
+    font-size: 16px;
+  }
+}
+@media(max-width:800px) {
+  .hero-left img {
+    width: 300px;
+  }
+  .hero-right {
+    padding-right: 30px;
+  }
+  .hero-right h2 {
+    font-size: 40px; 
+  }
+  .hero-right p {
+    font-size: 16px;
+  }
+  .hero-buynow-btn {  
+    width: 140px;  
+    height: 25px;
+    font-size: 13px;
+  }
+}
+@media(max-width:500px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero-left {
+    display: none;
+  }
+  .hero-right {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .hero-right h2 {
+    font-size: 50px; 
+  }
+  .hero-right p {
+    font-size: 18px;
+  }
+  .hero-buynow-btn {  
+    width: 145px;  
+    height: 27px;
+    font-size: 14px;
+  }
+}
